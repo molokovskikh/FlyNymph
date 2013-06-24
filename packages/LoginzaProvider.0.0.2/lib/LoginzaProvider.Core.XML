@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LoginzaProvider.Core</name>
+    </assembly>
+    <members>
+        <member name="T:System.Web.Mvc.HelpersLoginza">
+            <summary>
+                Расширение Loginza для представления
+            </summary>
+        </member>
+        <member name="M:System.Web.Mvc.HelpersLoginza.LoginzaInit(System.Web.Mvc.HtmlHelper)">
+            <summary>
+                Инициализация, помещается в представлении в тэг head
+            </summary>
+        </member>
+        <member name="M:System.Web.Mvc.HelpersLoginza.Loginza(System.Web.Mvc.HtmlHelper,System.String,System.String)">
+            <summary>
+                Получает виджет Loginza
+            </summary>
+            <param name="html"></param>
+            <param name="action">Действие</param>
+            <param name="controller">Контроллер</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Web.Mvc.HelpersLoginza.Loginza(System.Web.Mvc.HtmlHelper,System.String[])">
+            <summary>
+                Получает виджет Loginza
+            </summary>
+            <param name="html"></param>
+            <param name="providers">Список сервисов с которыми работать (через запятую, например "twitter,facebook")</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Web.Mvc.HelpersLoginza.Loginza(System.Web.Mvc.HtmlHelper,System.String)">
+            <summary>
+                Получает виджет Loginza
+            </summary>
+            <param name="html"></param>
+            <param name="textLink">Описание ссылки (может быть html)</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Web.Mvc.HelpersLoginza.Loginza(System.Web.Mvc.HtmlHelper,System.String,System.String[])">
+            <summary>
+                Получает виджет Loginza
+            </summary>
+            <param name="html"></param>
+            <param name="textLink">Описание ссылки (может быть html)</param>
+            <param name="providers">Список сервисов с которыми работать (через запятую, например "twitter,facebook")</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Web.Mvc.HelpersLoginza.Loginza(System.Web.Mvc.HtmlHelper,System.String,System.String,System.String)">
+            <summary>
+                Получает виджет Loginza
+            </summary>
+            <param name="html"></param>
+            <param name="action">Действие</param>
+            <param name="controller">Контроллер</param>
+            <param name="textLink">Описание ссылки (может быть html)</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Web.Mvc.HelpersLoginza.Loginza(System.Web.Mvc.HtmlHelper,System.String,System.String,System.String,System.String[])">
+            <summary>
+                Получает виджет Loginza
+            </summary>
+            <param name="html"></param>
+            <param name="action">Действие</param>
+            <param name="controller">Контроллер</param>
+            <param name="textLink">Описание ссылки (может быть html)</param>
+            <param name="providers">Список сервисов с которыми работать (через запятую, например "twitter,facebook")</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Web.Mvc.HelpersLoginza.Loginza(System.Web.Mvc.HtmlHelper,System.String,System.String,System.String[])">
+            <summary>
+                Получает виджет Loginza
+            </summary>
+            <param name="html"></param>
+            <param name="uri">относительный URL на обработчик ответа сервиса</param>
+            <param name="textLink">Описание ссылки (может быть html)</param>
+            <param name="providers">Список сервисов с которыми работать (через запятую, например "twitter,facebook")</param>
+            <returns></returns>
+        </member>
+        <member name="M:LoginzaProvider.Core.LoginzaProvider.#ctor(System.Int32,System.String)">
+            <summary>
+            ctor
+            </summary>
+            <param name="widgetId">Your Loginza Winget ID</param>
+            <param name="secureKey">Get security key for your widget on Loginza settings page</param>
+        </member>
+    </members>
+</doc>

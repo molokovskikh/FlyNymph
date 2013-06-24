@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>LoginzaProvider</id>
+    <version>0.0.2</version>
+    <title>Loginza provider for .NET</title>
+    <authors>Александр Бындю</authors>
+    <owners>Александр Бындю</owners>
+    <projectUrl>https://github.com/AlexanderByndyu/LoginzaProvider</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Loginza provider for .NET</description>
+    <releaseNotes>v0.0.2</releaseNotes>
+    <tags>loginza</tags>
+    <dependencies>
+      <dependency id="Newtonsoft.Json" version="4.5.4" />
+    </dependencies>
+  </metadata>
+</package>
