@@ -151,7 +151,6 @@
     <Compile Include="App_Start\BootstrapBundleConfig.cs" />
     <Compile Include="App_Start\Qiwi.cs" />
     <Compile Include="Controllers\*.cs" />
-    <Compile Include="Helpers\Html\Loginza.cs" />
     <Compile Include="Views\*.cs" />
     <Compile Include="Models\*.cs" />
     <Content Include="Scripts\bootstrap.js" />
@@ -734,6 +733,7 @@
     <Compile Include="gs\core\Entity\*.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Helpers\Html\" />
     <Folder Include="WebForms\" />
   </ItemGroup>
   <PropertyGroup>
