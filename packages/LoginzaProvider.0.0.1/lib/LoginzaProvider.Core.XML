@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LoginzaProvider.Core</name>
+    </assembly>
+    <members>
+        <member name="M:LoginzaProvider.Core.LoginzaProvider.#ctor(System.Int32,System.String)">
+            <summary>
+            ctor
+            </summary>
+            <param name="widgetId">Your Loginza Winget ID</param>
+            <param name="secureKey">Get security key for your widget on Loginza settings page</param>
+        </member>
+    </members>
+</doc>

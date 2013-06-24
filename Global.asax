@@ -1,0 +1,1 @@
+﻿<%@ Application Language="C#"  CodeBehind="Global.aspx.cs" Inherits="FlyNymph.MvcApplication" %>

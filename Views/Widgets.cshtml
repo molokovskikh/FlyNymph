@@ -1,0 +1,21 @@
+﻿<!--Facebook-->
+<script>(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/ru_RU/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!--Facebook-->
+ <!--Twitter-->
+<script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');</script>
+<!--Twitter-->
+
+<div id="fb-root">
+<div class="fb-like" data-send="false" data-width="450" data-show-faces="false" data-font="verdana"></div>
+</div>
+@*<a class="btn fly-widget" href="https://twitter.com/intent/tweet?original_referer=@{this.Write(this.Request.Url.AbsoluteUri);}&amp;text=Российское сообщество муховязов&amp;tw_p=tweetbutton&amp;url=@{this.Write(this.Request.Url.AbsoluteUri);}">
+    <img src="~/Content/images/twitter-bird-light-bgs.png" />
+</a>*@
+<a href="https://twitter.com/fly-nymph" class="twitter-follow-button" data-show-count="false" data-lang="ru" data-size="large" data-show-screen-name="false"></a>
+<a href="https://twitter.com/twitter" class="twitter-follow-button" data-show-count="false" data-lang="ru" data-size="large" data-show-screen-name="false"></a>

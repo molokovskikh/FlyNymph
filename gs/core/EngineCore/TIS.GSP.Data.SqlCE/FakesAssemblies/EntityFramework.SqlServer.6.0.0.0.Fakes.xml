@@ -1,0 +1,380 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EntityFramework.SqlServer.6.0.0.0.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.QualityTools.Testing.Fakes.Delegates.EntityFrameworkSqlServerDelegates">
+            <summary>Contains custom delegates used for the stubs and shims of EntityFramework.SqlServer</summary>
+        </member>
+        <member name="T:System.Data.Entity.SqlServer.Fakes.ShimSqlAzureDbConfiguration">
+            <summary>Shim type of System.Data.Entity.SqlServer.SqlAzureDbConfiguration</summary>
+        </member>
+        <member name="M:System.Data.Entity.SqlServer.Fakes.ShimSqlAzureDbConfiguration.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:System.Data.Entity.SqlServer.Fakes.ShimSqlAzureDbConfiguration.#ctor(System.Data.Entity.SqlServer.SqlAzureDbConfiguration)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:System.Data.Entity.SqlServer.Fakes.ShimSqlAzureDbConfiguration.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Data.Entity.SqlServer.Fakes.ShimSqlAzureDbConfiguration.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.ShimSqlAzureDbConfiguration.AddExecutionStrategyFuncOfIExecutionStrategyString">
+            <summary>Sets the shim of SqlAzureDbConfiguration.AddExecutionStrategy(Func`1&lt;IExecutionStrategy&gt; getExecutionStrategy, String serverName)</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.ShimSqlAzureDbConfiguration.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.ShimSqlAzureDbConfiguration.Constructor">
+            <summary>Sets the shim of SqlAzureDbConfiguration.SqlAzureDbConfiguration()</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.ShimSqlAzureDbConfiguration._ctorb__0">
+            <summary>Sets the shim of SqlAzureDbConfiguration.&lt;.ctor&gt;b__0()</summary>
+        </member>
+        <member name="T:System.Data.Entity.SqlServer.Fakes.ShimSqlAzureDbConfiguration.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.ShimSqlAzureDbConfiguration.AllInstances.AddExecutionStrategyFuncOfIExecutionStrategyString">
+            <summary>Sets the shim of SqlAzureDbConfiguration.AddExecutionStrategy(Func`1&lt;IExecutionStrategy&gt; getExecutionStrategy, String serverName)</summary>
+        </member>
+        <member name="T:System.Data.Entity.SqlServer.Fakes.ShimSqlAzureExecutionStrategy">
+            <summary>Shim type of System.Data.Entity.SqlServer.SqlAzureExecutionStrategy</summary>
+        </member>
+        <member name="M:System.Data.Entity.SqlServer.Fakes.ShimSqlAzureExecutionStrategy.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:System.Data.Entity.SqlServer.Fakes.ShimSqlAzureExecutionStrategy.#ctor(System.Data.Entity.SqlServer.SqlAzureExecutionStrategy)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:System.Data.Entity.SqlServer.Fakes.ShimSqlAzureExecutionStrategy.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Data.Entity.SqlServer.Fakes.ShimSqlAzureExecutionStrategy.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Data.Entity.SqlServer.Fakes.ShimSqlAzureExecutionStrategy.Bind(System.Data.Entity.Infrastructure.IExecutionStrategy)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.ShimSqlAzureExecutionStrategy.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.ShimSqlAzureExecutionStrategy.Constructor">
+            <summary>Sets the shim of SqlAzureExecutionStrategy.SqlAzureExecutionStrategy()</summary>
+        </member>
+        <member name="T:System.Data.Entity.SqlServer.Fakes.ShimSqlAzureExecutionStrategy.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="T:System.Data.Entity.SqlServer.Fakes.ShimSqlAzureRetriableExceptionDetector">
+            <summary>Shim type of System.Data.Entity.SqlServer.SqlAzureRetriableExceptionDetector</summary>
+        </member>
+        <member name="M:System.Data.Entity.SqlServer.Fakes.ShimSqlAzureRetriableExceptionDetector.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:System.Data.Entity.SqlServer.Fakes.ShimSqlAzureRetriableExceptionDetector.#ctor(System.Data.Entity.SqlServer.SqlAzureRetriableExceptionDetector)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:System.Data.Entity.SqlServer.Fakes.ShimSqlAzureRetriableExceptionDetector.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Data.Entity.SqlServer.Fakes.ShimSqlAzureRetriableExceptionDetector.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Data.Entity.SqlServer.Fakes.ShimSqlAzureRetriableExceptionDetector.Bind(System.Data.Entity.Infrastructure.IRetriableExceptionDetector)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.ShimSqlAzureRetriableExceptionDetector.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.ShimSqlAzureRetriableExceptionDetector.Constructor">
+            <summary>Sets the shim of SqlAzureRetriableExceptionDetector.SqlAzureRetriableExceptionDetector()</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.ShimSqlAzureRetriableExceptionDetector.ShouldRetryOnException">
+            <summary>Sets the shim of SqlAzureRetriableExceptionDetector.ShouldRetryOn(Exception ex)</summary>
+        </member>
+        <member name="T:System.Data.Entity.SqlServer.Fakes.ShimSqlAzureRetriableExceptionDetector.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.ShimSqlAzureRetriableExceptionDetector.AllInstances.ShouldRetryOnException">
+            <summary>Sets the shim of SqlAzureRetriableExceptionDetector.ShouldRetryOn(Exception ex)</summary>
+        </member>
+        <member name="T:System.Data.Entity.SqlServer.Fakes.ShimSqlExecutionStrategyResolver">
+            <summary>Shim type of System.Data.Entity.SqlServer.SqlExecutionStrategyResolver</summary>
+        </member>
+        <member name="M:System.Data.Entity.SqlServer.Fakes.ShimSqlExecutionStrategyResolver.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:System.Data.Entity.SqlServer.Fakes.ShimSqlExecutionStrategyResolver.#ctor(System.Data.Entity.SqlServer.SqlExecutionStrategyResolver)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:System.Data.Entity.SqlServer.Fakes.ShimSqlExecutionStrategyResolver.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Data.Entity.SqlServer.Fakes.ShimSqlExecutionStrategyResolver.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Data.Entity.SqlServer.Fakes.ShimSqlExecutionStrategyResolver.Bind(System.Data.Entity.Config.IDbDependencyResolver)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.ShimSqlExecutionStrategyResolver.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.ShimSqlExecutionStrategyResolver.ConstructorFuncOfIExecutionStrategyString">
+            <summary>Sets the shim of SqlExecutionStrategyResolver.SqlExecutionStrategyResolver(Func`1&lt;IExecutionStrategy&gt; getExecutionStrategy, String serverName)</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.ShimSqlExecutionStrategyResolver.GetServiceTypeObject">
+            <summary>Sets the shim of SqlExecutionStrategyResolver.GetService(Type type, Object key)</summary>
+        </member>
+        <member name="T:System.Data.Entity.SqlServer.Fakes.ShimSqlExecutionStrategyResolver.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.ShimSqlExecutionStrategyResolver.AllInstances.GetServiceTypeObject">
+            <summary>Sets the shim of SqlExecutionStrategyResolver.GetService(Type type, Object key)</summary>
+        </member>
+        <member name="T:System.Data.Entity.SqlServer.Fakes.ShimSqlProviderServices">
+            <summary>Shim type of System.Data.Entity.SqlServer.SqlProviderServices</summary>
+        </member>
+        <member name="M:System.Data.Entity.SqlServer.Fakes.ShimSqlProviderServices.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:System.Data.Entity.SqlServer.Fakes.ShimSqlProviderServices.#ctor(System.Data.Entity.SqlServer.SqlProviderServices)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:System.Data.Entity.SqlServer.Fakes.ShimSqlProviderServices.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Data.Entity.SqlServer.Fakes.ShimSqlProviderServices.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.ShimSqlProviderServices.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.ShimSqlProviderServices.CheckDatabaseExistsSqlConnectionNullableOfInt32String">
+            <summary>Sets the shim of SqlProviderServices.CheckDatabaseExists(SqlConnection sqlConnection, Nullable`1&lt;Int32&gt; commandTimeout, String databaseName)</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.ShimSqlProviderServices.Constructor">
+            <summary>Sets the shim of SqlProviderServices.SqlProviderServices()</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.ShimSqlProviderServices.CreateCommandDbProviderManifestDbCommandTree">
+            <summary>Sets the shim of SqlProviderServices.CreateCommand(DbProviderManifest providerManifest, DbCommandTree commandTree)</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.ShimSqlProviderServices.CreateCommandSqlConnectionStringNullableOfInt32">
+            <summary>Sets the shim of SqlProviderServices.CreateCommand(SqlConnection sqlConnection, String commandText, Nullable`1&lt;Int32&gt; commandTimeout)</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.ShimSqlProviderServices.CreateDbCommandDefinitionDbProviderManifestDbCommandTree">
+            <summary>Sets the shim of SqlProviderServices.CreateDbCommandDefinition(DbProviderManifest providerManifest, DbCommandTree commandTree)</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.ShimSqlProviderServices.DbCreateDatabaseDbConnectionNullableOfInt32StoreItemCollection">
+            <summary>Sets the shim of SqlProviderServices.DbCreateDatabase(DbConnection connection, Nullable`1&lt;Int32&gt; commandTimeout, StoreItemCollection storeItemCollection)</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.ShimSqlProviderServices.DbCreateDatabaseScriptStringStoreItemCollection">
+            <summary>Sets the shim of SqlProviderServices.DbCreateDatabaseScript(String providerManifestToken, StoreItemCollection storeItemCollection)</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.ShimSqlProviderServices.DbDatabaseExistsDbConnectionNullableOfInt32StoreItemCollection">
+            <summary>Sets the shim of SqlProviderServices.DbDatabaseExists(DbConnection connection, Nullable`1&lt;Int32&gt; commandTimeout, StoreItemCollection storeItemCollection)</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.ShimSqlProviderServices.DbDeleteDatabaseDbConnectionNullableOfInt32StoreItemCollection">
+            <summary>Sets the shim of SqlProviderServices.DbDeleteDatabase(DbConnection connection, Nullable`1&lt;Int32&gt; commandTimeout, StoreItemCollection storeItemCollection)</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.ShimSqlProviderServices.DbGetSpatialServicesString">
+            <summary>Sets the shim of SqlProviderServices.DbGetSpatialServices(String versionHint)</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.ShimSqlProviderServices.DropDatabaseSqlConnectionNullableOfInt32String">
+            <summary>Sets the shim of SqlProviderServices.DropDatabase(SqlConnection sqlConnection, Nullable`1&lt;Int32&gt; commandTimeout, String databaseName)</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.ShimSqlProviderServices.EnsureSqlParameterValueObject">
+            <summary>Sets the shim of SqlProviderServices.EnsureSqlParameterValue(Object value)</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.ShimSqlProviderServices.GenerateDatabaseNameString">
+            <summary>Sets the shim of SqlProviderServices.GenerateDatabaseName(String mdfFileName)</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.ShimSqlProviderServices.GetBinaryDbTypeTypeUsage">
+            <summary>Sets the shim of SqlProviderServices.GetBinaryDbType(TypeUsage type)</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.ShimSqlProviderServices.GetDbProviderManifestString">
+            <summary>Sets the shim of SqlProviderServices.GetDbProviderManifest(String versionHint)</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.ShimSqlProviderServices.GetDbProviderManifestTokenDbConnection">
+            <summary>Sets the shim of SqlProviderServices.GetDbProviderManifestToken(DbConnection connection)</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.ShimSqlProviderServices.GetDbSpatialDataReaderDbDataReaderString">
+            <summary>Sets the shim of SqlProviderServices.GetDbSpatialDataReader(DbDataReader fromReader, String versionHint)</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.ShimSqlProviderServices.GetExecutionStrategy">
+            <summary>Sets the shim of SqlProviderServices.GetExecutionStrategy()</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.ShimSqlProviderServices.GetKatmaiDateTimePrecisionTypeUsageBoolean">
+            <summary>Sets the shim of SqlProviderServices.GetKatmaiDateTimePrecision(TypeUsage type, Boolean isOutParam)</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.ShimSqlProviderServices.GetLdfFileNameString">
+            <summary>Sets the shim of SqlProviderServices.GetLdfFileName(String dataFileName)</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.ShimSqlProviderServices.GetMdfFileNameString">
+            <summary>Sets the shim of SqlProviderServices.GetMdfFileName(String attachDBFile)</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.ShimSqlProviderServices.GetNonMaxLengthSqlDbType">
+            <summary>Sets the shim of SqlProviderServices.GetNonMaxLength(SqlDbType type)</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.ShimSqlProviderServices.GetOrGenerateDatabaseNameAndGetFileNamesSqlConnectionStringOutStringOutStringOut">
+            <summary>Sets the shim of SqlProviderServices.GetOrGenerateDatabaseNameAndGetFileNames(SqlConnection sqlConnection, String&amp; databaseName, String&amp; dataFileName, String&amp; logFileName)</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.ShimSqlProviderServices.GetParameterPrecisionTypeUsageNullableOfByte">
+            <summary>Sets the shim of SqlProviderServices.GetParameterPrecision(TypeUsage type, Nullable`1&lt;Byte&gt; defaultIfUndefined)</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.ShimSqlProviderServices.GetParameterSizeTypeUsageBoolean">
+            <summary>Sets the shim of SqlProviderServices.GetParameterSize(TypeUsage type, Boolean isOutParam)</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.ShimSqlProviderServices.GetScaleTypeUsage">
+            <summary>Sets the shim of SqlProviderServices.GetScale(TypeUsage type)</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.ShimSqlProviderServices.GetStringDbTypeTypeUsage">
+            <summary>Sets the shim of SqlProviderServices.GetStringDbType(TypeUsage type)</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.ShimSqlProviderServices.InstanceGet">
+            <summary>Sets the shim of SqlProviderServices.get_Instance()</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.ShimSqlProviderServices.ParameterModeToParameterDirectionParameterMode">
+            <summary>Sets the shim of SqlProviderServices.ParameterModeToParameterDirection(ParameterMode mode)</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.ShimSqlProviderServices.SetDbParameterValueDbParameterTypeUsageObject">
+            <summary>Sets the shim of SqlProviderServices.SetDbParameterValue(DbParameter parameter, TypeUsage parameterType, Object value)</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.ShimSqlProviderServices.StaticConstructor">
+            <summary>Sets the shim of SqlProviderServices.SqlProviderServices()</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.ShimSqlProviderServices.UsingConnectionSqlConnectionActionOfSqlConnection">
+            <summary>Sets the shim of SqlProviderServices.UsingConnection(SqlConnection sqlConnection, Action`1&lt;SqlConnection&gt; act)</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.ShimSqlProviderServices.UsingMasterConnectionSqlConnectionActionOfSqlConnection">
+            <summary>Sets the shim of SqlProviderServices.UsingMasterConnection(SqlConnection sqlConnection, Action`1&lt;SqlConnection&gt; act)</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.ShimSqlProviderServices.ValidateVersionHintString">
+            <summary>Sets the shim of SqlProviderServices.ValidateVersionHint(String versionHint)</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.ShimSqlProviderServices._DbDatabaseExistsb__fSqlConnection">
+            <summary>Sets the shim of SqlProviderServices.&lt;DbDatabaseExists&gt;b__f(SqlConnection con)</summary>
+        </member>
+        <member name="T:System.Data.Entity.SqlServer.Fakes.ShimSqlProviderServices.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.ShimSqlProviderServices.AllInstances.CreateDbCommandDefinitionDbProviderManifestDbCommandTree">
+            <summary>Sets the shim of SqlProviderServices.CreateDbCommandDefinition(DbProviderManifest providerManifest, DbCommandTree commandTree)</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.ShimSqlProviderServices.AllInstances.DbCreateDatabaseDbConnectionNullableOfInt32StoreItemCollection">
+            <summary>Sets the shim of SqlProviderServices.DbCreateDatabase(DbConnection connection, Nullable`1&lt;Int32&gt; commandTimeout, StoreItemCollection storeItemCollection)</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.ShimSqlProviderServices.AllInstances.DbCreateDatabaseScriptStringStoreItemCollection">
+            <summary>Sets the shim of SqlProviderServices.DbCreateDatabaseScript(String providerManifestToken, StoreItemCollection storeItemCollection)</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.ShimSqlProviderServices.AllInstances.DbDatabaseExistsDbConnectionNullableOfInt32StoreItemCollection">
+            <summary>Sets the shim of SqlProviderServices.DbDatabaseExists(DbConnection connection, Nullable`1&lt;Int32&gt; commandTimeout, StoreItemCollection storeItemCollection)</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.ShimSqlProviderServices.AllInstances.DbDeleteDatabaseDbConnectionNullableOfInt32StoreItemCollection">
+            <summary>Sets the shim of SqlProviderServices.DbDeleteDatabase(DbConnection connection, Nullable`1&lt;Int32&gt; commandTimeout, StoreItemCollection storeItemCollection)</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.ShimSqlProviderServices.AllInstances.DbGetSpatialServicesString">
+            <summary>Sets the shim of SqlProviderServices.DbGetSpatialServices(String versionHint)</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.ShimSqlProviderServices.AllInstances.GetDbProviderManifestString">
+            <summary>Sets the shim of SqlProviderServices.GetDbProviderManifest(String versionHint)</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.ShimSqlProviderServices.AllInstances.GetDbProviderManifestTokenDbConnection">
+            <summary>Sets the shim of SqlProviderServices.GetDbProviderManifestToken(DbConnection connection)</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.ShimSqlProviderServices.AllInstances.GetDbSpatialDataReaderDbDataReaderString">
+            <summary>Sets the shim of SqlProviderServices.GetDbSpatialDataReader(DbDataReader fromReader, String versionHint)</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.ShimSqlProviderServices.AllInstances.GetExecutionStrategy">
+            <summary>Sets the shim of SqlProviderServices.GetExecutionStrategy()</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.ShimSqlProviderServices.AllInstances.SetDbParameterValueDbParameterTypeUsageObject">
+            <summary>Sets the shim of SqlProviderServices.SetDbParameterValue(DbParameter parameter, TypeUsage parameterType, Object value)</summary>
+        </member>
+        <member name="T:System.Data.Entity.SqlServer.Fakes.StubSqlAzureDbConfiguration">
+            <summary>Stub type of System.Data.Entity.SqlServer.SqlAzureDbConfiguration</summary>
+        </member>
+        <member name="M:System.Data.Entity.SqlServer.Fakes.StubSqlAzureDbConfiguration.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:System.Data.Entity.SqlServer.Fakes.StubSqlAzureDbConfiguration.InitializeStub">
+            <summary>Initializes a new instance of type StubSqlAzureDbConfiguration</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.StubSqlAzureDbConfiguration.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.StubSqlAzureDbConfiguration.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.StubSqlAzureDbConfiguration.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:System.Data.Entity.SqlServer.Fakes.StubSqlAzureExecutionStrategy">
+            <summary>Stub type of System.Data.Entity.SqlServer.SqlAzureExecutionStrategy</summary>
+        </member>
+        <member name="M:System.Data.Entity.SqlServer.Fakes.StubSqlAzureExecutionStrategy.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:System.Data.Entity.SqlServer.Fakes.StubSqlAzureExecutionStrategy.InitializeStub">
+            <summary>Initializes a new instance of type StubSqlAzureExecutionStrategy</summary>
+        </member>
+        <member name="M:System.Data.Entity.SqlServer.Fakes.StubSqlAzureExecutionStrategy.ProtectedExecute``1(System.Func{``0})">
+            <summary>Sets the stub of ExecutionStrategy.ProtectedExecute(Func`1&lt;!!0&gt; func)</summary>
+        </member>
+        <member name="M:System.Data.Entity.SqlServer.Fakes.StubSqlAzureExecutionStrategy.ProtectedExecuteOf1FuncOfM0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Func{``0},``0})">
+            <summary>Sets stubs of ProtectedExecute(Func`1&lt;!!0&gt; func)</summary>
+        </member>
+        <member name="F:System.Data.Entity.SqlServer.Fakes.StubSqlAzureExecutionStrategy.SupportsExistingTransactionsGet">
+            <summary>Sets the stub of ExecutionStrategy.get_SupportsExistingTransactions()</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.StubSqlAzureExecutionStrategy.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.StubSqlAzureExecutionStrategy.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.StubSqlAzureExecutionStrategy.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.StubSqlAzureExecutionStrategy.SupportsExistingTransactions">
+            <summary>Sets the stub of ExecutionStrategy.get_SupportsExistingTransactions()</summary>
+        </member>
+        <member name="T:System.Data.Entity.SqlServer.Fakes.StubSqlAzureRetriableExceptionDetector">
+            <summary>Stub type of System.Data.Entity.SqlServer.SqlAzureRetriableExceptionDetector</summary>
+        </member>
+        <member name="M:System.Data.Entity.SqlServer.Fakes.StubSqlAzureRetriableExceptionDetector.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:System.Data.Entity.SqlServer.Fakes.StubSqlAzureRetriableExceptionDetector.InitializeStub">
+            <summary>Initializes a new instance of type StubSqlAzureRetriableExceptionDetector</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.StubSqlAzureRetriableExceptionDetector.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.StubSqlAzureRetriableExceptionDetector.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.StubSqlAzureRetriableExceptionDetector.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:System.Data.Entity.SqlServer.Fakes.StubSqlExecutionStrategyResolver">
+            <summary>Stub type of System.Data.Entity.SqlServer.SqlExecutionStrategyResolver</summary>
+        </member>
+        <member name="M:System.Data.Entity.SqlServer.Fakes.StubSqlExecutionStrategyResolver.#ctor(System.Func{System.Data.Entity.Infrastructure.IExecutionStrategy},System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:System.Data.Entity.SqlServer.Fakes.StubSqlExecutionStrategyResolver.InitializeStub">
+            <summary>Initializes a new instance of type StubSqlExecutionStrategyResolver</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.StubSqlExecutionStrategyResolver.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.StubSqlExecutionStrategyResolver.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:System.Data.Entity.SqlServer.Fakes.StubSqlExecutionStrategyResolver.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,68 @@
+﻿@RenderSections("widgets", "carousel")
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Html.LoginzaInit()
+    <link href="/Content/bootstrap" rel="stylesheet" />
+    <link href="/Content/flynymph.css" rel="stylesheet" />
+</head>
+<body>        
+        <div class="container">
+            <div class="row fly-head">
+                <div class="span9">
+                </div>
+                <div class="span3">Любимая муха не кусает</div>
+            </div>
+            <div class="row">
+                <div class="span4">
+                    <div class="fly-logo">
+                        <img src="~/Content/images/logo.png" />
+                        <div>Российское сообщество муховязов</div>
+                    </div>
+                </div>
+                <div class="span5">                   
+                   @Html.Loginza()
+                </div>
+                <div class="span3">
+                    @RenderSection("widgets",false)
+                  @*@{Html.RenderAction("Widgets","Home");}*@
+                </div>
+            </div>
+            <section>
+                <div class="row">
+                    <div class="span4">
+                        <ul class="nav nav-list fly-menu">
+                            <li class="active"><a href="/about">О проекте</a></li>
+                            <li><a href="/stepbystep">Step by Step</a></li>
+                            <li><a href="/video">Видео</a></li>
+                            <li><a href="/pohody">Походы</a></li>
+                            <li><a href="/tools">Инструменты</a></li>
+                            <li><a href="/catalog">Каталог</a></li>
+                            <li><a href="/order">Заказ</a></li>
+                        </ul>
+                    </div>
+                    <div class="span8">
+                        @RenderSection("carousel",false)
+                        @*@{Html.RenderAction("Carousel","Home");}*@
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="row-fluid fly-content">
+                    @RenderBody()
+                </div>
+            </section>
+
+        </div>
+    
+    @*@{        
+        Html.Partial("~/gs/default.aspx");
+    }*@
+</body>
+</html>
+

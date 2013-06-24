@@ -1,0 +1,772 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6B3C8734-576B-482E-842A-1C46BFEBDF76}</ProjectGuid>
+    <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FlyNymph</RootNamespace>
+    <AssemblyName>FlyNymph</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime">
+      <HintPath>packages\WebGrease.1.3.0\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="LoginzaProvider.Core">
+      <HintPath>packages\LoginzaProvider.0.0.1\lib\LoginzaProvider.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="QiwiShop, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\Qiwi.1.0.12\lib\QiwiShop.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentArt.Web.UI" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Optimization">
+      <Private>True</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="T4MVCExtensions, Version=3.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\T4MVCExtensions.3.6.5\lib\net40\T4MVCExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="TwitterBootstrapMVC">
+      <HintPath>packages\TwitterBootstrapMVC.1.2.4\lib\net40\TwitterBootstrapMVC.dll</HintPath>
+    </Reference>
+    <Reference Include="WebActivatorEx, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\WebActivatorEx.2.0.1\lib\net40\WebActivatorEx.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <HintPath>packages\WebGrease.1.3.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <!--<Reference Include="GalleryServerPro.Business" />
+    <Reference Include="GalleryServerPro.Business.Interfaces" />
+    <Reference Include="GalleryServerPro.Configuration" />
+    <Reference Include="GalleryServerPro.Data.SqlCe" />
+    <Reference Include="GalleryServerPro.Provider" />-->
+    <ProjectReference Include="gs\core\EngineCore\TIS.GSP.Business.Interfaces\TIS.GSP.Business.Interfaces.csproj">
+      <Project>{20dfe2a2-2532-4afe-8b4b-5be8e3f8492f}</Project>
+      <Name>TIS.GSP.Business.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="gs\core\EngineCore\TIS.GSP.Business\TIS.GSP.Business.csproj">
+      <Project>{cd3eaf7d-b964-4baf-be4d-e2844b4c7a33}</Project>
+      <Name>TIS.GSP.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="gs\core\EngineCore\TIS.GSP.Configuration\TIS.GSP.Configuration.csproj">
+      <Project>{4fda2dd0-eb77-42db-8683-d1588a940392}</Project>
+      <Name>TIS.GSP.Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="gs\core\EngineCore\TIS.GSP.ErrorHandler\TIS.GSP.ErrorHandler.csproj">
+      <Project>{fc3b5e2d-e0ab-47fc-a126-64aa48982947}</Project>
+      <Name>TIS.GSP.ErrorHandler</Name>
+    </ProjectReference>
+    <ProjectReference Include="gs\core\EngineCore\TIS.GSP.Provider\TIS.GSP.Provider.csproj">
+      <Project>{5c79a39e-6b63-42f2-b4f6-d69576df7f5c}</Project>
+      <Name>TIS.GSP.Provider</Name>
+    </ProjectReference>
+    <ProjectReference Include="gs\core\EngineCore\TIS.GSP.WebControls\TIS.GSP.WebControls.csproj">
+      <Project>{4fa72962-a020-4b7d-8974-08dfedfc6335}</Project>
+      <Name>TIS.GSP.WebControls</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Qiwi.svc" />
+    <Content Include="Scripts\jquery-2.0.0.js" />
+    <Content Include="Scripts\jquery-2.0.0.min.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BootstrapBundleConfig.cs" />
+    <Compile Include="App_Start\Qiwi.cs" />
+    <Compile Include="Controllers\*.cs" />
+    <Compile Include="Helpers\Html\Loginza.cs" />
+    <Compile Include="Views\*.cs" />
+    <Compile Include="Models\*.cs" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="gs\Web.config" />
+    <None Include="Scripts\jquery-2.0.0-vsdoc.js" />
+    <Content Include="gs\default.aspx" />
+    <Content Include="Content\*.css" />
+    <Content Include="Content\images\*.*" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="Scripts\jquery-2.0.0.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="gs\controls\actionmenu.ascx.cs">
+      <DependentUpon>actionmenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\controls\actionmenu.ascx.designer.cs">
+      <DependentUpon>actionmenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\controls\albumedittemplate.ascx.cs">
+      <DependentUpon>albumedittemplate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\controls\albumedittemplate.ascx.designer.cs">
+      <DependentUpon>albumedittemplate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\controls\albumheader.ascx.cs">
+      <DependentUpon>albumheader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\controls\albumheader.ascx.designer.cs">
+      <DependentUpon>albumheader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\controls\albummenu.ascx.cs">
+      <DependentUpon>albummenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\controls\albummenu.ascx.designer.cs">
+      <DependentUpon>albummenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\controls\albumtreeview.ascx.cs">
+      <DependentUpon>albumtreeview.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\controls\albumtreeview.ascx.designer.cs">
+      <DependentUpon>albumtreeview.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\controls\galleryheader.ascx.cs">
+      <DependentUpon>galleryheader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\controls\galleryheader.ascx.designer.cs">
+      <DependentUpon>galleryheader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\controls\login.ascx.cs">
+      <DependentUpon>login.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\controls\login.ascx.designer.cs">
+      <DependentUpon>login.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\controls\mediaobjectview.ascx.cs">
+      <DependentUpon>mediaobjectview.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\controls\mediaobjectview.ascx.designer.cs">
+      <DependentUpon>mediaobjectview.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\controls\myaccount.ascx.cs">
+      <DependentUpon>myaccount.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\controls\myaccount.ascx.designer.cs">
+      <DependentUpon>myaccount.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\controls\pager.ascx.cs">
+      <DependentUpon>pager.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\controls\pager.ascx.designer.cs">
+      <DependentUpon>pager.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\controls\popupinfo.ascx.cs">
+      <DependentUpon>popupinfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\controls\popupinfo.ascx.designer.cs">
+      <DependentUpon>popupinfoe.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\controls\search.ascx.cs">
+      <DependentUpon>search.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\controls\search.ascx.designer.cs">
+      <DependentUpon>search.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\controls\thumbnailview.ascx.cs">
+      <DependentUpon>thumbnailview.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\controls\thumbnailview.ascx.designer.cs">
+      <DependentUpon>thumbnailview.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\controls\usermessage.ascx.cs">
+      <DependentUpon>usermessage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\controls\usermessage.ascx.designer.cs">
+      <DependentUpon>usermessage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\controls\admin\adminfooter.ascx.cs">
+      <DependentUpon>adminfooter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\controls\admin\adminfooter.ascx.designer.cs">
+      <DependentUpon>adminfooter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\controls\admin\adminheader.ascx.cs">
+      <DependentUpon>adminheader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\controls\admin\adminheader.ascx.designer.cs">
+      <DependentUpon>adminheader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\controls\admin\adminmenu.ascx.cs">
+      <DependentUpon>adminmenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\controls\admin\adminmenu.ascx.designer.cs">
+      <DependentUpon>adminmenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\controls\task\taskfooter.ascx.cs">
+      <DependentUpon>taskfooter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\controls\task\taskfooter.ascx.designer.cs">
+      <DependentUpon>taskfooter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\controls\task\taskheader.ascx.cs">
+      <DependentUpon>taskheader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\controls\task\taskheader.ascx.designer.cs">
+      <DependentUpon>taskheader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\admin\albums.ascx.cs">
+      <DependentUpon>albums.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\admin\albums.ascx.designer.cs">
+      <DependentUpon>albums.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\admin\backuprestore.ascx.cs">
+      <DependentUpon>backuprestore.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\admin\backuprestore.ascx.designer.cs">
+      <DependentUpon>backuprestore.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\admin\errorlog.ascx.cs">
+      <DependentUpon>errorlog.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\admin\errorlog.ascx.designer.cs">
+      <DependentUpon>errorlog.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\admin\galleries.ascx.cs">
+      <DependentUpon>galleries.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\admin\galleries.ascx.designer.cs">
+      <DependentUpon>galleries.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\admin\gallerycontrolsettings.ascx.cs">
+      <DependentUpon>gallerycontrolsettings.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\admin\gallerycontrolsettings.ascx.designer.cs">
+      <DependentUpon>gallerycontrolsettings.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\admin\gallerysettings.ascx.cs">
+      <DependentUpon>gallerysettings.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\admin\gallerysettings.ascx.designer.cs">
+      <DependentUpon>gallerysettings.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\admin\images.ascx.cs">
+      <DependentUpon>images.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\admin\images.ascx.designer.cs">
+      <DependentUpon>images.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\admin\manageroles.ascx.cs">
+      <DependentUpon>manageroles.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\admin\manageroles.ascx.designer.cs">
+      <DependentUpon>manageroles.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\admin\manageusers.ascx.cs">
+      <DependentUpon>manageusers.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\admin\manageusers.ascx.designer.cs">
+      <DependentUpon>manageusers.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\admin\mediaobjects.ascx.cs">
+      <DependentUpon>mediaobjects.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\admin\mediaobjects.ascx.designer.cs">
+      <DependentUpon>mediaobjects.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\admin\mediaobjecttypes.ascx.cs">
+      <DependentUpon>mediaobjecttypes.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\admin\mediaobjecttypes.ascx.designer.cs">
+      <DependentUpon>mediaobjecttypes.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\admin\metadata.ascx.cs">
+      <DependentUpon>metadata.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\admin\metadata.ascx.designer.cs">
+      <DependentUpon>metadata.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\admin\sitesettings.ascx.cs">
+      <DependentUpon>sitesettings.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\admin\sitesettings.ascx.designer.cs">
+      <DependentUpon>sitesettings.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\admin\usersettings.ascx.cs">
+      <DependentUpon>usersettings.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\admin\usersettings.ascx.designer.cs">
+      <DependentUpon>usersettings.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\admin\videoaudioother.ascx.cs">
+      <DependentUpon>videoaudioother.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\admin\videoaudioother.ascx.designer.cs">
+      <DependentUpon>videoaudioother.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\error\cannotwritetodirectory.ascx.cs">
+      <DependentUpon>cannotwritedirectory.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\error\cannotwritetodirectory.ascx.designer.cs">
+      <DependentUpon>cannotwritedirectory.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\error\generic.ascx.cs">
+      <DependentUpon>generic.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\error\generic.ascx.designer.cs">
+      <DependentUpon>generic.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\task\addobjects.ascx.cs">
+      <DependentUpon>addobjects.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\task\addobjects.ascx.designer.cs">
+      <DependentUpon>addobjects.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\task\assignthumbnail.ascx.cs">
+      <DependentUpon>assignthumbnail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\task\assignthumbnail.ascx.designer.cs">
+      <DependentUpon>assignthumbnail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\task\createalbum.ascx.cs">
+      <DependentUpon>createalbum.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\task\createalbum.ascx.designer.cs">
+      <DependentUpon>createalbum.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\task\deletealbum.ascx.cs">
+      <DependentUpon>deletealbum.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\task\deletealbum.ascx.designer.cs">
+      <DependentUpon>deletealbum.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\task\deletehires.ascx.cs">
+      <DependentUpon>deletehires.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\task\deletehires.ascx.designer.cs">
+      <DependentUpon>deletehires.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\task\deleteobjects.ascx.cs">
+      <DependentUpon>deleteobjects.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\task\deleteobjects.ascx.designer.cs">
+      <DependentUpon>deleteobjects.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\task\downloadobjects.ascx.cs">
+      <DependentUpon>downloadobjects.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\task\downloadobjects.ascx.designer.cs">
+      <DependentUpon>downloadobjects.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\task\editcaptions.ascx.cs">
+      <DependentUpon>editcaptions.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\task\editcaptions.ascx.designer.cs">
+      <DependentUpon>editcaptions.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\task\rearrange.ascx.cs">
+      <DependentUpon>rearrange.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\task\rearrange.ascx.designer.cs">
+      <DependentUpon>rearrange.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\task\rotateimage.ascx.cs">
+      <DependentUpon>rotateimage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\task\rotateimage.ascx.designer.cs">
+      <DependentUpon>rotateimage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\task\rotateimages.ascx.cs">
+      <DependentUpon>rotateimages.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\task\rotateimages.ascx.designer.cs">
+      <DependentUpon>rotateimages.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\task\synchronize.ascx.cs">
+      <DependentUpon>synchronize.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\task\synchronize.ascx.designer.cs">
+      <DependentUpon>synchronize.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\task\transferobject.ascx.cs">
+      <DependentUpon>transferobject.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\task\transferobject.ascx.designer.cs">
+      <DependentUpon>transferobject.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\album.ascx.cs">
+      <DependentUpon>album.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\album.ascx.designer.cs">
+      <DependentUpon>album.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\albumtreeview.ascx.cs">
+      <DependentUpon>albumtreeview.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\albumtreeview.ascx.designer.cs">
+      <DependentUpon>albumtreeview.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\changepassword.ascx.cs">
+      <DependentUpon>changepassword.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\changepassword.ascx.designer.cs">
+      <DependentUpon>changepassword.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\createaccount.ascx.cs">
+      <DependentUpon>createaccount.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\createaccount.ascx.designer.cs">
+      <DependentUpon>createaccount.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\install.ascx.cs">
+      <DependentUpon>install.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\install.ascx.designer.cs">
+      <DependentUpon>install.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\login.ascx.cs">
+      <DependentUpon>login.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\login.ascx.designer.cs">
+      <DependentUpon>login.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\mediaobject.ascx.cs">
+      <DependentUpon>mediaobject.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\mediaobject.ascx.designer.cs">
+      <DependentUpon>mediaobject.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\myaccount.ascx.cs">
+      <DependentUpon>myaccount.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\myaccount.ascx.designer.cs">
+      <DependentUpon>myaccount.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\recoverpassword.ascx.cs">
+      <DependentUpon>recoverpassword.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\recoverpassword.ascx.designer.cs">
+      <DependentUpon>recoverpassword.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\search.ascx.cs">
+      <DependentUpon>search.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\search.ascx.designer.cs">
+      <DependentUpon>search.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\upgrade.ascx.cs">
+      <DependentUpon>upgrade.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\pages\upgrade.ascx.designer.cs">
+      <DependentUpon>upgrade.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\handler\*.cs" />
+    <Compile Include="gs\pages\installer\*.cs" />
+    <Compile Include="gs\services\*.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\*.*" />
+    <Content Include="gs\controls\*.ascx" />
+    <Content Include="gs\controls\admin\*.ascx" />
+    <Content Include="gs\controls\task\*.ascx" />
+    <Content Include="gs\handler\*.ashx" />
+    <Content Include="gs\images\componentart\*.*" />
+    <Content Include="gs\images\plupload\*.*" />
+    <Content Include="gs\Images\rotate\*.*" />
+    <Content Include="gs\images" />
+    <Content Include="gs\pages\*.ascx" />
+    <Content Include="gs\pages\admin\*.ascx" />
+    <Content Include="gs\pages\error\*.ascx" />
+    <Content Include="gs\pages\installer\*.ascx" />
+    <Content Include="gs\pages\task\*.ascx" />
+    <Content Include="gs\script\*.*" />
+    <Content Include="gs\script\plupload\*.*" />
+    <Content Include="gs\services\*.asmx" />
+    <Content Include="gs\skins\mediaplayer\*.*" />
+    <Content Include="gs\styles\*.*" />
+    <Content Include="gs\templates\*.*" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\_Layout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\StetByStep\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Carousel.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Widgets.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\GalleryServerPro.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>GalleryServerPro.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\GalleryServerPro.ru.resx">
+    </Content>
+    <Compile Include="App_GlobalResources\GalleryServerPro.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GalleryServerPro.resx</DependentUpon>
+    </Compile>
+    <Compile Include="gs\core\AdminPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\core\Gallery.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\core\GalleryPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\core\GalleryUserControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\core\Global.cs" />
+    <Compile Include="gs\core\MediaObjectHtmlBuilder.cs" />
+    <Compile Include="gs\core\TaskPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gs\core\Utils.cs" />
+    <Compile Include="gs\core\Controller\*.cs" />
+    <Compile Include="gs\core\Entity\*.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="WebForms\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52427</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:9840/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

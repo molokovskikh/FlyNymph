@@ -1,0 +1,30 @@
+﻿@if(Model.CarouselData!=null)
+{
+<div id="stepbystepCarousel" class="carousel slide">
+                 @if(Model.CarouselData.Count>0)
+                {
+                <ol class="carousel-indicators">
+                    <li data-target="#stepbystepCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#stepbystepCarousel" data-slide-to="1"></li>
+                    <li data-target="#stepbystepCarousel" data-slide-to="2"></li>
+                </ol>
+                 }
+                <div class="carousel-inner">
+                    @foreach (var item in Model.CarouselData)
+                    {
+                        <div class="item@(Html.Raw((item.Active!=null&&item.Active)?" active":""))">
+                            <img src="@item.url" data-stepbyid=""/>
+                            <div class="carousel-caption">
+                                <h6>@item.description</h6>
+                            </div>
+                        </div>
+                    }
+                </div>
+                @if(Model.CarouselData.Count>0)
+                {
+                <a class="carousel-control left" href="#stepbystepCarousel" data-slide="prev">&lsaquo;</a>
+                <a class="carousel-control right" href="#stepbystepCarousel" data-slide="next">&rsaquo;</a>
+                }
+ </div>
+ <script>$('#stepbystepCarousel').carousel();</script>
+}

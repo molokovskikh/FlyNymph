@@ -1,0 +1,117 @@
+﻿.fly-logo img {
+     
+}
+.fly-logo div{
+    text-align:center;
+    text-shadow:6px 2px 5px rgba(180, 207, 177, 0.6);
+}
+
+.fly-head {
+    font-size:16px;
+    color: #ABB9C7;
+    text-decoration:line-through;
+    text-shadow: 1px 0px 2px #768DA4;
+    text-align:center;
+}
+
+.fly-widget img{
+    height:36px;
+    width:36px;
+}
+
+.fly-widget 
+{
+    padding:0px;
+}
+
+
+.fly-content  {
+border-color: #E4F0CF;
+border-width:6px;
+border-style:solid;
+background-color:#F6FBEF;
+margin-bottom:24px;
+}
+
+.fly-content > .span8,.fly-content > .span7,.fly-content > .span9,.fly-content > .span10 {
+    padding:1em;    
+}
+
+    .fly-content > .span3 {
+        border-left-style: dashed;
+        border-left-width: 6px;
+        border-left-color: #E4F0CF;
+        padding:10px 26px 16px 22px;
+    }
+
+  .fly-content > .span3 > div.span12 {
+      color:rgba(193, 209, 164, 0.96);
+      text-align:center;
+      text-decoration:double;
+      font-weight:400;
+      font-size:18px;
+   }
+
+  
+.fly-content > .span3 >  .thumbnail {
+    border-radius: 5px 5px;
+    border: 4px solid #D1E6AE;
+}
+
+    /*Выравниваем первый элемент списка френдов*/
+    .fly-content li[class*="span"]:first-child {
+        margin-left:2.564102564102564%;
+    }
+
+    .fly-content a.thumbnail:hover,.fly-content a.thumbnail:focus {
+        border-color:rgba(16, 214, 8, 0.97);
+    }
+.carousel .carousel-caption {
+  background-color: rgba(0, 0, 0, 0.17);
+  text-align:center;
+}
+
+section {
+    padding-top:25px;
+}
+
+/*Меню*/
+.fly-menu {
+    padding-right:0px;
+    padding-left:0px;
+    border-bottom:1px solid rgba(128, 128, 128,0.8);
+}
+
+ .fly-menu > li > a, .fly-menu .nav-header {
+        margin-left:0px;
+        margin-right:0px;
+        line-height:40px;
+        font-size:larger;
+        
+    }
+
+.fly-menu > .active > a {
+ background-color:#F6FBEF;
+ color:rgba(128, 128, 128,0.8);
+}
+
+ .fly-menu > .active > a:hover, .fly-menu > .active > a:focus {
+        text-shadow:6px 2px 5px rgba(180, 207, 177, 0.84);
+        background-color:#F6FBEF;
+        color:rgba(0, 0, 0,0.8);
+ }
+
+.fly-menu > li > a {
+    color:rgba(128, 128, 128,0.8);    
+}
+
+.fly-menu > li > a:hover, .fly-menu > a:focus {
+        text-shadow:6px 2px 5px rgba(180, 207, 177, 0.84);
+         color:rgba(0, 0, 0,0.6);
+}
+
+.fly-menu > li {
+    border-top:1px solid rgba(128, 128, 128,0.8);
+}
+/*Меню*/
+

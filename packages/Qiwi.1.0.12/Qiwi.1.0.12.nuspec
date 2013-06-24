@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Qiwi</id>
+    <version>1.0.12</version>
+    <title>Qiwi Shop</title>
+    <authors>Sergey Molokovskikh</authors>
+    <owners>Sergey Molokovskikh</owners>
+    <licenseUrl>http://opensource.org/licenses/Apache-2.0</licenseUrl>
+    <projectUrl>https://nuget.org/packages/Qiwi</projectUrl>
+    <iconUrl>http://ishopnew.qiwi.ru/images/logo.gif</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Module integration with payment system QIWI, for online shopping based on ASP.NET  -  
+      Модуль для интеграции интернет магазина на базе ASP.NET, с платежной системой Qiwi.</description>
+    <summary>Module integration with payment system QIWI, for online shopping based on ASP.NET 
+      (With using WCF and platform .NET4)</summary>
+    <releaseNotes />
+    <copyright>Copyright  2013</copyright>
+    <language>ru-RU</language>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.ServiceModel" targetFramework=".NETFramework4.0" />
+      <frameworkAssembly assemblyName="System.ServiceModel.Web" targetFramework=".NETFramework4.0" />
+      <frameworkAssembly assemblyName="System.IdentityModel" targetFramework=".NETFramework4.0" />
+    </frameworkAssemblies>
+    <references>
+      <reference file="QiwiShop.dll" />
+    </references>
+  </metadata>
+</package>
