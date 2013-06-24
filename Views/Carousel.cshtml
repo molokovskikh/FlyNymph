@@ -10,7 +10,7 @@
                 </ol>
                  }
                 <div class="carousel-inner">
-                    @foreach (var item in Model.CarouselData)
+                    @foreach (dynamic item in Model.CarouselData)
                     {
                         <div class="item@(Html.Raw((item.Active!=null&&item.Active)?" active":""))">
                             <img src="@item.url" data-stepbyid=""/>

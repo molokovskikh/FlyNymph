@@ -127,7 +127,7 @@ namespace FlyNymph.Models
             Type t =  innerObject.GetType();
             if ( (t.IsArray && t.Equals(typeof(object[]))) || t.GetInterface("System.Collections.IColection")!=null || t.GetInterface("System.Collections.IList") != null)
             {
-                
+                //(innerObject as IEnumerable<object>).Aggregate(0, (f, e) => { dict.Add(new DynamicObject(e)); return f; });
                 return;
             }
 
