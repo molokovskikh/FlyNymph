@@ -29,8 +29,10 @@ public class HomeController:Controller
         //data.CarouselData = new object[] { new { url = "http://www.codeproject.com/App_Themes/CodeProject/Img/logo250x135.gif" } };
          GalleryServerPro.Business.Interfaces.IGallery g= GalleryServerPro.Provider.DataProviderManager.Provider.Gallery_GetGalleries(new GalleryServerPro.Business.GalleryCollection()).Where(x=>x.Description=="fly-nymph").FirstOrDefault();
          
-         List<object> items = 
-         g.Albums.Aggregate(new List<object>(),(f,e)=>
+          
+         return View(
+         (g!=null)?
+                g.Albums.Aggregate(new List<object>(),(f,e)=>
              {
                  GalleryServerPro.Provider.DataProviderManager.Provider.Album_GetChildMediaObjectsById(e.Key,false).Aggregate(f, (ff, mo) =>
                  {
@@ -39,17 +41,9 @@ public class HomeController:Controller
                      return ff;
                  });                 
                  return f;
-             });
-        return View(items);
-        return View(
-
-            new
-            {
-                Name = "Вася",
-                CarouselData =
-                new object[] { new { url = "http://www.codeproject.com/App_Themes/CodeProject/Img/logo250x135.gif",description = "Описалово",Active=true },
-                               new { url = "http://www.weblancer.net/img/logo.png",description = "Описалово2" }}
-            });
+             })
+             :null
+           );       
 
     }
 

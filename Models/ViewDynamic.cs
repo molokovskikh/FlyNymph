@@ -122,7 +122,8 @@ namespace FlyNymph.Models
         }
 
         public DynamicObject(object innerObject)
-        {            
+        {
+            if (innerObject == null) return;
             Type t =  innerObject.GetType();
             if ( (t.IsArray && t.Equals(typeof(object[]))) || t.GetInterface("System.Collections.IColection")!=null || t.GetInterface("System.Collections.IList") != null)
             {
