@@ -1,0 +1,50 @@
+﻿@{
+    if(!IsAjax)
+    {
+    Layout = "~/Views/_Layout.cshtml";
+    ViewBag.Title = "Пошаговые инструкции";
+    }
+}
+ <div class="span12" id="stepbystep_content">
+     <p>
+    @if (Model.StepByStepDetails != null)
+    {
+        <ul class="thumbnails">
+        @foreach (var item in Model.StepByStepDetails)
+        {
+            <li class="span3">
+            <a href="#" class="thumbnail">
+                <img src="@item.url" style="height:205px"/>
+            </a>
+            </li>
+        }
+        </ul>
+    }
+    </p>
+ </div>
+
+@if(!IsAjax)
+{
+<script>
+    $(document).ready(function () {
+        $('#stepbystepCarousel').carousel('pause');
+        $('#stepbystepCarousel>.carousel-indicators>li').click(function () {
+            var indicator = $(this);
+            
+            $('#stepbystep_content').css({ 'background-image':'url(/Content/images/loader.gif)'});
+
+            if (parseInt(indicator.attr('data-id')) > 0) {
+                $.ajax({
+                    url: '@(this.ViewContext.HttpContext.Request.Url )',
+                    type:'POST',
+                    data: {id:indicator.attr('data-id')},
+                    success: function (new_content) {
+                        $('#stepbystep_content').html(new_content)
+                        .css({ 'background-image': '' });
+                    }
+                });
+            }
+        });
+    });
+ </script>
+}

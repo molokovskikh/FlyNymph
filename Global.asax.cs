@@ -26,10 +26,17 @@ namespace FlyNymph
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
             routes.MapPageRoute("RouteGallery", "Gallery", "~/gs/Default.aspx");
             routes.MapRoute(
+                "stepbystep", // Route name
+                "{controller}/{action}", // URL with parameters                
+                new { controller="StepByStep",action = "Index"} // Parameter defaults
+            );
+            
+            routes.MapRoute(
                 "Default", // Route name
                 "{controller}/{action}/{id}", // URL with parameters
                 new { controller = "Home", action = "Index", id = UrlParameter.Optional } // Parameter defaults
             );
+             
             
         }
 

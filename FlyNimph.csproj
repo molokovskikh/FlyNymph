@@ -690,7 +690,7 @@
     <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\StetByStep\Index.cshtml" />
+    <Content Include="Views\StepByStep\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Carousel.cshtml" />

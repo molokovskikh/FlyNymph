@@ -66,10 +66,23 @@ margin-bottom:24px;
     .fly-content a.thumbnail:hover,.fly-content a.thumbnail:focus {
         border-color:rgba(16, 214, 8, 0.97);
     }
+
+.carousel-caption {
+    color: #99F5AC;
+    font-style: italic;
+}
+
 .carousel .carousel-caption {
   background-color: rgba(0, 0, 0, 0.17);
   text-align:center;
 }
+
+.carousel-indicators > li:hover
+{
+    background-color:rgba(16, 214, 8, 0.97);
+}
+
+
 
 section {
     padding-top:25px;

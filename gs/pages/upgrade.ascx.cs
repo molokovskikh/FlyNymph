@@ -718,8 +718,8 @@ namespace GalleryServerPro.Web.Pages
 						cmd.Parameters.Add(new SqlParameter("@RootAlbumSummary", SqlDbType.NVarChar, DataConstants.AlbumSummaryLength));
 
 						cmd.Parameters["@GalleryId"].Value = _galleryId;
-						cmd.Parameters["@RootAlbumTitle"].Value = "All albums";
-						cmd.Parameters["@RootAlbumSummary"].Value = "Welcome to Gallery Server Pro!";
+						cmd.Parameters["@RootAlbumTitle"].Value = "Все альбомы";
+						cmd.Parameters["@RootAlbumSummary"].Value = "Добро пожаловать в Gallery Server Pro!";
 
 						cmd.Connection.Open();
 						cmd.ExecuteNonQuery();

@@ -184,9 +184,9 @@ namespace GalleryServerPro.Web.Controller
 					sampleAlbum = Factory.CreateEmptyAlbumInstance(galleryId);
 
 					sampleAlbum.Parent = Factory.LoadRootAlbumInstance(galleryId);
-					sampleAlbum.Title = "Samples";
+					sampleAlbum.Title = "Примеры";
 					sampleAlbum.DirectoryName = "Samples";
-					sampleAlbum.Summary = "Welcome to Gallery Server Pro!";
+					sampleAlbum.Summary = "Добро пожаловать в Gallery Server Pro!";
 					sampleAlbum.CreatedByUserName = "System";
 					sampleAlbum.DateAdded = currentTimestamp;
 					sampleAlbum.LastModifiedByUserName = "System";
