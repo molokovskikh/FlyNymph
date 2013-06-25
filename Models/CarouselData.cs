@@ -58,13 +58,15 @@ namespace FlyNymph.Models
        public static object GetStepByStep(int ? id)
         {
             IGallery g = DataProviderManager.Provider.Gallery_GetGalleries(new GalleryCollection()).Where(x => x.Description =="stepbystep").FirstOrDefault();
-            Func<int, int, DisplayObjectType, string> fMoUrl = delegate(int galleryId, int mediaObjectId,DisplayObjectType displayType)
+            if (g == null) return null; 
+           Func<int, int, DisplayObjectType, string> fMoUrl = delegate(int galleryId, int mediaObjectId,DisplayObjectType displayType)
             {
                 return string.Concat(Utils.GalleryRoot,
                                "/handler/getmedia.ashx?",
                                string.Format("moid={0}&dt={1}&g={2}", mediaObjectId, (int)displayType, galleryId));
             };
-
+            
+            
             var albums = g.Albums.Where(w => DataProviderManager.Provider.Album_GetAlbumById(w.Key).AlbumParentId > 0);
             int _min = albums.Min(x => x.Key);
             int _max = albums.Max(x => x.Key);
