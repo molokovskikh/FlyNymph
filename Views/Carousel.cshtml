@@ -6,16 +6,16 @@
                 <ol class="carousel-indicators">
                      @foreach (dynamic item in Model.CarouselData)
                     {
-                       <li data-target="#stepbystepCarousel" data-slide-to="@(cnt++)" data-id="@(Html.Raw((item.id!=null&&item.id>0)?item.id:""))" class="@(Html.Raw((item.Active!=null&&item.Active)?" active":""))">
-                        </li>                        
+                       <li onclick="window.location='/stepbystep/@(Html.Raw((item.id!=null&&item.id>0)?item.id:""))'" data-target="#stepbystepCarousel" data-slide-to="@(cnt++)" data-id="@(Html.Raw((item.id!=null&&item.id>0)?item.id:""))" class="@(Html.Raw((item.Active!=null&&item.Active)?" active":""))">
+                       </li>                        
                     }                    
                 </ol>
                  }
-                <div class="carousel-inner">
+                <div class="carousel-inner" style="height:100%">
                     @foreach (dynamic item in Model.CarouselData)
                     {
                         <div class="item@(Html.Raw((item.Active!=null&&item.Active)?" active":""))">
-                            <img src="@item.url" style="height:100%;width:100%" data-stepbyid="@(Html.Raw((item.id!=null&&item.id>0)?item.id:""))"/>
+                            <img src="@item.url" data-stepbyid="@(Html.Raw((item.id!=null&&item.id>0)?item.id:""))"/>
                             <div class="carousel-caption">
                                 <h6>@item.description</h6>
                             </div>
@@ -28,5 +28,6 @@
                 <a class="carousel-control right" href="#stepbystepCarousel" data-slide="next">&rsaquo;</a>
                 }
  </div>
- <script>$('#stepbystepCarousel').carousel();</script>
+ 
+ <script>$('#stepbystepCarousel').height(500).carousel();</script>
 }

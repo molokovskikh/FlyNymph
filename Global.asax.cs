@@ -27,8 +27,8 @@ namespace FlyNymph
             routes.MapPageRoute("RouteGallery", "Gallery", "~/gs/Default.aspx");
             routes.MapRoute(
                 "stepbystep", // Route name
-                "{controller}/{action}", // URL with parameters                
-                new { controller="StepByStep",action = "Index"} // Parameter defaults
+                "StepByStep/{id}", // URL with parameters
+                new { controller="StepByStep",action="Index",id=UrlParameter.Optional}
             );
             
             routes.MapRoute(
