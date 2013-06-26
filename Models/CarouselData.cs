@@ -10,6 +10,16 @@ using GalleryServerPro.Web;
 
 namespace FlyNymph.Models
 {
+    abstract class A
+    {
+
+    }
+    
+    class B : A
+    {
+    }
+  
+
     public static class CarouselData
     {
         
@@ -17,6 +27,8 @@ namespace FlyNymph.Models
 
         public static object GetByGallery(string name)
         {
+            
+            //System.GC.SuppressFinalize();
             IGallery g = DataProviderManager.Provider.Gallery_GetGalleries(new GalleryCollection()).Where(x => x.Description == name).FirstOrDefault();
             Func<int, int, DisplayObjectType, string> fMoUrl = delegate(int galleryId, int mediaObjectId,DisplayObjectType displayType)
             {
