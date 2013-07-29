@@ -1,6 +1,9 @@
-﻿@{    
+﻿@{
+    if(!IsAjax)
+    {
     Layout = "~/Views/_Layout.cshtml";
     ViewBag.Title = "Пошаговые инструкции";
+    }
 }
  <div class="span12" id="stepbystep_content">
      <p>
@@ -19,3 +22,35 @@
     }
     </p>
  </div>
+
+@if(!IsAjax)
+{
+<script>
+    $(document).ready(function () {
+        $('#stepbystepCarousel').carousel('pause');
+        $('#stepbystepCarousel>.carousel-indicators>li').click(function () {
+            var indicator = $(this);
+           if($('.loading-learn').length==0)
+	         $('#stepbystepCarousel').after('<div class=\'loading-learn\'></div>');
+          $('.loading-learn')
+                                .popover({
+	               placement: 'left',
+	               title: 'Загрузка урока...',
+ 	               content: 'Пожалуйста подождите...<br>Выполняется загрузка урока!', html: true
+		        })
+	         .popover('show');           
+            if (parseInt(indicator.attr('data-id')) > 0) {
+                $.ajax({
+                    url: '@(this.ViewContext.HttpContext.Request.Url)',
+                    type:'POST',
+                    data: {id:indicator.attr('data-id')},
+                    success: function (new_content) {
+                        $('#stepbystep_content').html(new_content);
+	       $('.loading-learn').popover('hide');
+                    }
+                });
+            }
+        });
+    });
+ </script>
+}

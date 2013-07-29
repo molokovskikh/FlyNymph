@@ -2158,7 +2158,7 @@ namespace GalleryServerPro.Web.Pages
 			const string resourcePrefix = "Msg_";
 			const string headerSuffix = "_Hdr";
 			const string detailSuffix = "_Dtl";
-
+            
 			string headerMsg = Resources.GalleryServerPro.ResourceManager.GetString(String.Concat(resourcePrefix, this.Message.ToString(), headerSuffix));
 			string detailMsg = Resources.GalleryServerPro.ResourceManager.GetString(String.Concat(resourcePrefix, this.Message.ToString(), detailSuffix));
 
@@ -2773,6 +2773,8 @@ namespace GalleryServerPro.Web.Pages
 		private void InitializePage()
 		{
 			InitializeGallerySettings();
+
+            System.Globalization.CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("en-EN");
 
 			lock (_lockObject)
 			{

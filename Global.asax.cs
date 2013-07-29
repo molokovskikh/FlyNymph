@@ -40,8 +40,9 @@ namespace FlyNymph
             
         }
 
+        
         protected void Application_Start()
-        {
+        {          
             AreaRegistration.RegisterAllAreas();
 
             RegisterGlobalFilters(GlobalFilters.Filters);
